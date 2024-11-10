@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+
+}
+
+/*Estilizações padrão*/
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-largura{
+    width: 100%;
+    max-width: 1024px;
+}
+
+.texto-destaque{
+    color: rgb(0, 179, 255);
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+p{
+    font-size: 18px;
+}
+
+/*inicio da estilização do rodapé*/
+
+.topo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.topo-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.topo-logo,.topo-menu{
+    flex: 1 1 auto;
+}
+
+.topo-logo a{
+    font-size: 24px;
+}
+
+.topo-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.topo-menu-links{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/*finalizando cabeçalho da página/*
+
+/*iniciando estilização do banner*/
+
+.banner{
+    padding-top: 60px;
+    height: 100dvh;
+    background-image: url('../IMG/img-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-texto{
+    background-color:rgba(20, 189, 144, 0.522);
+    padding: 20px;
+    color: #fff;
+    height: 300px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+    min-width: 200px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.banner-texto h1{
+    font-size: 70px;
+}
+
+.banner-texto p{
+    font-size: 36px;
+}
+
+/*Estilizando home*/
+
+.home,.sobre{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home-texto,.rota-texto,.sobre-texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.home-quarto{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.homer-quarto-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis:300px;
+    height: 300px;
+    border-bottom: 2px solid rgb(16, 141, 108);
+}
+
+.card-imagem{
+    width: 100%;
+    height: 200px;
+}
+
+.card-imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-link a{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/*Estilizando rota*/
+.rota{
+    padding: 50px 0;
+}
+.rota-texto{
+    margin-bottom: 30px;
+}
+
+/*Estilizando sobre*/
+
+.sobre-container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.sobre-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.sobre-menu-cards{
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    flex-grow: 1;
+}
+
+.cards-texto{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.cards-texto h3{
+    font-size: 18px;
+}
+.cards-texto p{
+    font-size: 16px;
+}
+
+.cards-imagem{
+    width: 150px;
+    height: 100%;
+}
+
+.cards-imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Estilizando rodapé*/
+
+.rodape{
+    background-color: rgb(16, 141, 108) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contato{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #00000025;
+}
+
+.contato div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato h4{
+    font-size: 24px;
+}
+
+.contato a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.copy{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
